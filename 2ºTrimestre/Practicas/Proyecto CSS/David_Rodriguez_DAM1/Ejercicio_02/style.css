@@ -1,0 +1,19 @@
+/* Color del texto de la clase .destacado */
+.destacado {
+    color: red;
+}
+
+/* Color del texto del párrafo dentro del div con id "caja" */
+#caja p {
+    color: green;
+}
+
+/* Tamaño de fuente en h1 */
+h1 {
+    font-size: 30px;
+}
+
+/* Fondo gris a los párrafos dentro de un div */
+div p {
+    background-color: lightgray;
+}

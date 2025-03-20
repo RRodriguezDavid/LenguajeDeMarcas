@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Lista de la Compra</title>
+  <style>
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+    }
+    /* Elementos 2, 4 y 7 en rojo */
+    li:nth-child(2), li:nth-child(4), li:nth-child(7) {
+      color: red;
+    }
+    /* Elementos 1, 3 y 8 en mayúsculas y color verde */
+    li:nth-child(1), li:nth-child(3), li:nth-child(8) {
+      text-transform: uppercase;
+      color: green;
+    }
+    /* Último elemento con tamaño de letra mayor */
+    li:last-child {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Pan</li>
+    <li>Leche</li>
+    <li>Huevos</li>
+    <li>Tomates</li>
+    <li>Arroz</li>
+    <li>Azúcar</li>
+    <li>Patatas</li>
+    <li>Pescado</li>
+    <li>Fruta</li>
+    <li>Cereal</li>
+  </ul>
+</body>
+</html>

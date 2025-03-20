@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="peliculas.com">
+    <meta name="keywords" content="plantilla, html, css, reutilizar, javascript">
+    <meta name="description" content="Prácticas y ejercicios html">
+    <title>Top 10 Películas</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: rgb(0, 238, 255);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #cabeza {
+            text-align: center;
+            font-size: 50px;
+            border: 2px black inset;
+            padding: 10px;
+            margin: 20px auto;
+            width: 50%;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color: white;
+        }
+        #navegacion {
+            background-color: white;
+            border: 2px blue solid;
+            border-radius: 30px;   
+            padding: 15px;
+            width: 50%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        #navegacion a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: blue;
+        }
+        #navegacion a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            border: 3px green inset;
+            width: 80%;
+            height: auto; /* Altura adaptable */
+            margin: 20px auto;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        section img {
+            width: 150px;
+            height: 220px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        section .info {
+            flex: 1;
+            text-align: left;
+        }
+        section .info h3 {
+            margin: 0;
+            font-size: 20px;
+            color: green;
+        }
+        section .info p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        section .info strong {
+            color: darkblue;
+        }
+        .peliculasIzquierda {
+            margin-left: 10%;
+            margin-right: auto;
+        }
+        .peliculasDerecha {
+            margin-left: auto;
+            margin-right: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabeza">
+        Top 10 Películas para mí
+    </header>
+    <hr width="100%" size="8">
+    <nav id="navegacion">
+        <a href="#10">10ª</a>
+        <a href="#9">9ª</a>
+        <a href="#8">8ª</a>
+        <a href="#7">7ª</a>
+        <a href="#6">6ª</a>
+        <a href="#5">5ª</a>
+        <a href="#4">4ª</a>
+        <a href="#3">3ª</a>
+        <a href="#2">2ª</a>
+        <a href="#1">1ª</a>
+    </nav>
+
+    <section class="peliculasIzquierda" id="10">
+        <img src="elPadrino.PNG" alt="El Padrino">
+        <div class="info">
+            <h3>10ª: El Padrino</h3>
+            <p><strong>Sinopsis:</strong> La historia de la familia Corleone, líderes de la mafia en Nueva York.</p>
+            <p><strong>Reparto:</strong> Marlon Brando, Al Pacino, James Caan.</p>
+            <p><strong>Director:</strong> Francis Ford Coppola.</p>
+            <p><strong>Duración:</strong> 175 min.</p>
+            <p><strong>Puntuación en IMDb:</strong> 9.2/10.</p>
+            <p><strong>Críticas:</strong> "Una obra maestra del cine." - The New York Times.</p>
+        </div>
+    </section>
+
+    <section class="peliculasDerecha" id="9">
+        <img src="narnia.jpg" alt="The Chronicles of Narnia">
+        <div class="info">
+            <h3>9ª: The Chronicles of Narnia</h3>
+            <p><strong>Sinopsis:</strong> Cuatro hermanos viajan a un mundo mágico a través de un armario.</p>
+            <p><strong>Reparto:</strong> Georgie Henley, Skandar Keynes, Tilda Swinton.</p>
+            <p><strong>Director:</strong> Andrew Adamson.</p>
+            <p><strong>Duración:</strong> 140 min.</p>
+            <p><strong>Puntuación en IMDb:</strong> 6.9/10.</p>
+            <p><strong>Críticas:</strong> "Un espectáculo visual encantador." - Empire.</p>
+        </div>
+    </section>
+
+    <section class="peliculasIzquierda" id="8">
+        <img src="lucifer.png" alt="Lucifer">
+        <div class="info">
+            <h3>8ª: Lucifer</h3>
+            <p><strong>Sinopsis:</strong> Lucifer abandona el infierno y abre un club nocturno en Los Ángeles.</p>
+            <p><strong>Reparto:</strong> Tom Ellis, Lauren German, Kevin Alejandro.</p>
+            <p><strong>Director:</strong> Len Wiseman (episodio piloto).</p>
+            <p><strong>Duración:</strong> Serie (6 temporadas/42 min).</p>
+            <p><strong>Puntuación en IMDb:</strong> 8.1/10.</p>
+            <p><strong>Críticas:</strong> "Un giro innovador en el drama sobrenatural." - Variety.</p>
+        </div>
+    </section>
+
+    <section class="peliculasDerecha" id="7">
+        <img src="hijosDeLaAnarquia.jpg" alt="Sons of Anarchy">
+        <div class="info">
+            <h3>7ª: Sons of Anarchy</h3>
+            <p><strong>Sinopsis:</strong> Drama intenso sobre la vida de un club de motociclistas.</p>
+            <p><strong>Reparto:</strong> Charlie Hunman, Katey Sagal, Kim Coates.</p>
+            <p><strong>Director:</strong> Kurt Sutter.</p>
+            <p><strong>Duración:</strong> Serie (5 temporadas/45 min).</p>
+            <p><strong>Puntuación en IMDb:</strong> 8.6/10.</p>
+            <p><strong>Críticas:</strong> "Un drama de ciencia ficción muy interesante." - Variety.</p>
+        </div>
+    </section>
+
+    <section class="peliculasIzquierda" id="6">
+        <img src="aceroPuro.png" alt="Real Steel">
+        <div class="info">
+            <h3>6ª: Real Steel</h3>
+            <p><strong>Sinopsis:</strong> Una emocionante película de robots y boxeo.</p>
+            <p><strong>Reparto:</strong> Hugh Jackman, Dakota Goyo, Evangeline Lilly.</p>
+            <p><strong>Director:</strong> Shawn Levy.</p>
+            <p><strong>Duración:</strong> 126 min. </p>
+            <p><strong>Puntuación en IMDb:</strong> 7.1/10.</p>
+            <p><strong>Críticas:</strong> "Un buen drama de ciencia ficción." - Variety.</p>
+        </div>
+    </section>
+
+    <section class="peliculasDerecha" id="5">
+        <img src="et.jpg" alt="E.T. el Extraterrestre">
+        <div class="info">
+            <h3>5ª: E.T., el extraterrestre</h3>
+            <p><strong>Sinopsis:</strong> Un clásico que marcó a varias generaciones.</p>
+            <p><strong>Reparto:</strong> Henry Thomas, Dee Wallace, Robert MacNaughton.</p>
+            <p><strong>Director:</strong> Steven Spielberg.</p>
+            <p><strong>Duración:</strong> 115 min.</p>
+            <p><strong>Puntuación en IMDb:</strong> 7.9/10.</p>
+            <p><strong>Críticas:</strong> "Un clásico que marcó a varias generaciones." - Variety.</p>
+        </div>
+    </section>
+
+    <section class="peliculasIzquierda" id="4">
+        <img src="prisionBreak.png" alt="Prison Break">
+        <div class="info">
+            <h3>4ª: Prison Break</h3>
+            <p><strong>Sinopsis:</strong> Una serie llena de acción y giros inesperados.</p>
+            <p><strong>Reparto:</strong> Wentworth Miller, Dominic Purcell, Robert Knepper.</p>
+            <p><strong>Director:</strong> Paul Scheuring.</p>
+            <p><strong>Duración:</strong> Serie (3 temporadas/42 min).</p>
+            <p><strong>Puntuación en IMDb:</strong> 8.3/10.</p>
+            <p><strong>Críticas:</strong> "Una serie llena de acción y giros inesperados." - Variety.</p>
+        </div>
+    </section>
+
+    <section class="peliculasDerecha" id="3">
+        <img src="peaky.jpg" alt="Peaky Blinders">
+        <div class="info">
+            <h3>3ª: Peaky Blinders</h3>
+            <p><strong>Sinopsis:</strong> Un drama histórico con un elenco excepcional.</p>
+            <p><strong>Reparto:</strong> Cillian Murphy, Sam Neill, Paul Anderson.</p>
+            <p><strong>Director:</strong> Steven Knight.</p>
+            <p><strong>Duración:</strong> Serie (6 temporadas/60 min).</p>
+            <p><strong>Puntuación en IMDb:</strong> 8.7/10.</p>
+            <p><strong>Críticas:</strong> "Un drama histórico con un elenco excepcional." - Variety.</p>
+        </div>
+    </section>
+
+    <section class="peliculasIzquierda" id="2">
+        <img src="monstruos.png" alt="Monsters Inc.">
+        <div class="info">
+            <h3>2ª: Monsters, Inc.</h3>
+            <p><strong>Sinopsis:</strong> Una película animada que combina comedia y ternura.</p>
+            <p><strong>Reparto:</strong> Sulley, Boo, Mike Wazowski.</p>
+            <p><strong>Director:</strong> Pete Docter.</p>
+            <p><strong>Duración:</strong> 88 min.</p>
+            <p><strong>Puntuación en IMDb:</strong> 8.1/10.</p>
+            <p><strong>Críticas:</strong> "Una película animada que combina comedia y ternura." - Variety.</p>
+        </div>
+    </section>
+
+    <section class="peliculasDerecha" id="1">
+        <img src="comoEntrenarATuDragon.png" alt="Cómo entrenar a tu dragón">
+        <div class="info">
+            <h3>1ª: Cómo entrenar a tu dragón</h3>
+            <p><strong>Sinopsis:</strong> Una historia conmovedora y emocionante para todas las edades.</p>
+            <p><strong>Reparto:</strong> Jay Baruchel, Gerard Butler, America Ferrera.</p>
+            <p><strong>Director:</strong> Dean DeBlois.</p>
+            <p><strong>Duración:</strong> 98 min.</p>
+            <p><strong>Puntuación en IMDb:</strong> 8.1/10.</p>
+            <p><strong>Críticas:</strong> "Una historia conmovedora y emocionante para todas las edades." - Variety.</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="horario.com">
+    <meta name="keywords" content="plantilla, html, css, reutilizar, javascript">
+    <meta name="description" content="Prácticas y ejercicios html">
+    <title>Horario de Clase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #810c0c;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ff6600;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        .highlight {
+            background-color: #FFECB3; /* Color para clases importantes */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Horario de Clase</h1>
+        <p>Mi horario semanal</p>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:15 - 9:10</td>
+                <td class="highlight">Sistemas</td>
+                <td>Lenguaje</td>
+                <td>Base de Datos</td>
+                <td>Sistemas</td>
+                <td>Lenguaje</td>
+            </tr>
+            <tr>
+                <td>9:10 - 10:05</td>
+                <td>Programacion</td>
+                <td class="highlight">Sistemas</td>
+                <td>Empresa</td>
+                <td class="highlight">Sistemas</td>
+                <td>Lenguaje</td>
+            </tr>
+            <tr>
+                <td>10:05 - 11:00</td>
+                <td>Programacion</td>
+                <td>Sistemas</td>
+                <td class="highlight">Programacion</td>
+                <td>Programacion</td>
+                <td>Sistemas</td>
+            </tr>
+            <tr>
+                <td>11:00 - 11:30</td>
+                <td colspan="5">Recreo</td>
+            </tr>
+            <tr>
+                <td>11:30 - 12:20</td>
+                <td>Empresa</td>
+                <td>Programacion</td>
+                <td>Programacion</td>
+                <td>Programacion</td>
+                <td>Base de Datos</td>
+            </tr>
+            <tr>
+                <td>12:20 - 13:15</td>
+                <td>Empresa</td>
+                <td>Programacion</td>
+                <td>Entornos</td>
+                <td>Base de Datos</td>
+                <td class="highlight">Base de Datos</td>
+            </tr>
+            <tr>
+                <td>13:20 - 14:10</td>
+                <td>Robótica</td>
+                <td>Base de Datos</td>
+                <td>Entornos</td>
+                <td>Base de Datos</td>
+                <td class="highlight">Robótica</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="receta.com">
+    <meta name="keywords" content="plantilla, html, css, reutilizar, javascript">
+    <meta name="description" content="Prácticas y ejercicios html">
+    <title>Receta de Cocina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8e1;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #FFA726;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .recipe-header {
+            text-align: center;
+            padding: 15px;
+        }
+        .recipe-header h2 {
+            margin: 0;
+            color: #FFA726;
+        }
+        .recipe-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .recipe-content {
+            padding: 15px;
+        }
+        .ingredients, .instructions {
+            margin-bottom: 20px;
+        }
+        .ingredients h3, .instructions h3 {
+            color: #FFA726;
+            border-bottom: 2px solid #FFA726;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: disc;
+            margin: 10px 0 0 20px;
+        }
+        ol {
+            margin: 10px 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recetas Fáciles</h1>
+    </header>
+    <div class="container">
+        <div class="recipe-header">
+            <h2>Espagueti a la Carbonara</h2>
+            <p>Una receta deliciosa y fácil de preparar para toda la familia.</p>
+        </div>
+        <div class="recipe-image">
+            <img src="espagueti.jpg" alt="Espagueti a la Carbonara">
+        </div>
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>200 g de espagueti</li>
+                    <li>100 g de panceta o tocino</li>
+                    <li>2 huevos</li>
+                    <li>50 g de queso parmesano rallado</li>
+                    <li>1 diente de ajo</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Instrucciones</h3>
+                <ol>
+                    <li>Cocina los espaguetis en agua con sal según las instrucciones del paquete.</li>
+                    <li>En una sartén, cocina la panceta en cubos hasta que esté dorada. Añade el ajo picado y cocina por 1 minuto más.</li>
+                    <li>En un bol, bate los huevos y mezcla con el queso parmesano, sal y pimienta.</li>
+                    <li>Escurre los espaguetis y mézclalos rápidamente con la panceta y el ajo en la sartén caliente.</li>
+                    <li>Retira del fuego y añade la mezcla de huevo y queso. Remueve hasta que los espaguetis queden bien cubiertos.</li>
+                    <li>Sirve caliente y disfruta.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

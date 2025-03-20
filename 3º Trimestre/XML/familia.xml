@@ -1,0 +1,25 @@
+<persona>
+    <nombre>Angel</nombre>
+    <Hombre/>
+    <fecha-de-nacimiento>
+        <día>21</día>
+        <mes>11</mes>
+        <año>1973</año>
+    </fecha-de-nacimiento>
+    <ciudad>Mostoles</ciudad>
+    <Hijos>
+        <hijo>
+            <nombre>David</nombre>
+            <Hombre/>
+            <fecha-de-nacimiento>
+                <día>17</día>
+                <mes>04</mes>
+                <año>2005</año>
+            </fecha-de-nacimiento>
+        </hijo>
+        <ciudad>Pinto</ciudad>
+    </Hijos>
+</persona>
+
+
+

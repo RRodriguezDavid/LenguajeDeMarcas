@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Formulario.com">
+    <meta name="keywords" content="plantilla, html, css, reutilizar, javascript">
+    <meta name="description" content="Prácticas y ejercicios html">
+    <title>Formulario de Inscripción</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #6a1b9a;
+        }
+        .form-container label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .form-container input, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #8e24aa;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #6a1b9a;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario de Inscripción</h2>
+        <form>
+            <label for="name">Nombre Completo</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="course">Curso de Interés</label>
+            <input type="text" id="course" name="course">
+
+            <button type="submit">Inscribirme</button>
+        </form>
+    </div>
+</body>
+</html>

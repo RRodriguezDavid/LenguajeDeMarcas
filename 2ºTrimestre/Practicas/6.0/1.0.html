@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        /* Apartado 1: Cuadrícula básica */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            width: 90%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+        .item {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        
+        /* Apartado 2: Distribución con grid-template-areas */
+        .grid-layout {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "sidebar content content";
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            width: 90%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+        .header {
+            grid-area: header;
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: lightcoral;
+            padding: 15px;
+        }
+        .content {
+            grid-area: content;
+            background-color: lightgreen;
+            padding: 15px;
+        }
+        
+        /* Apartado 3: Uso de grid-auto-flow y minmax() */
+        .dynamic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-auto-flow: dense;
+            gap: 10px;
+            width: 90%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+        .dynamic-item {
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        
+        /* Apartado 4: Superposición de elementos */
+        .overlay-container {
+            display: grid;
+            grid-template-areas: "stack";
+            width: 90%;
+            max-width: 450px;
+            margin-top: 20px;
+            position: relative;
+        }
+        .background-image {
+            grid-area: stack;
+            height: 350px;
+            width: 450px;
+        }
+        .overlay-text {
+            grid-area: span;
+            position: absolute;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        
+        /* Apartado 5: Diseño responsive con repeat() y auto-fit */
+        .responsive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            width: 90%;
+            max-width: 1000px;
+            margin-top: 20px;
+        }
+        .responsive-item {
+            background-color: lavender;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Cuadrícula Básica</h2>
+    <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    
+    <h2>Distribución con Grid-template-areas</h2>
+    <div class="grid-layout">
+        <div class="header">Encabezado</div>
+        <div class="sidebar">Barra Lateral</div>
+        <div class="content">Contenido Principal</div>
+    </div>
+    
+    <h2>Cuadrícula Dinámica</h2>
+    <div class="dynamic-grid">
+        <div class="dynamic-item">A</div>
+        <div class="dynamic-item">B</div>
+        <div class="dynamic-item">C</div>
+        <div class="dynamic-item">D</div>
+        <div class="dynamic-item">E</div>
+    </div>
+    
+    <h2>Superposición de Elementos</h2>
+    <div class="overlay-container">
+        <img src="fondo.jpg" alt="Fondo de pantalla" class="background-image">
+        <div class="overlay-text">Texto Superpuesto</div>
+    </div>
+    
+    <h2>Diseño Responsive</h2>
+    <div class="responsive-grid">
+        <div class="responsive-item">1</div>
+        <div class="responsive-item">2</div>
+        <div class="responsive-item">3</div>
+        <div class="responsive-item">4</div>
+        <div class="responsive-item">5</div>
+        <div class="responsive-item">6</div>
+        <div class="responsive-item">7</div>
+        <div class="responsive-item">8</div>
+    </div>
+</body>
+</html>

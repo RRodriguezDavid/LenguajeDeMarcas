@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Formulario.com">
+    <meta name="keywords" content="plantilla, html, css, reutilizar, javascript">
+    <meta name="description" content="Prácticas y ejercicios html">
+    <title>Encuesta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #2e7d32;
+        }
+        .form-container label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .form-container input, .form-container select, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #388e3c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Encuesta de Satisfacción</h2>
+        <form>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name">
+
+            <label for="experience">¿Cómo calificarías tu experiencia?</label>
+            <select id="experience" name="experience">
+                <option value="excelente">Excelente</option>
+                <option value="buena">Buena</option>
+                <option value="regular">Regular</option>
+                <option value="mala">Mala</option>
+            </select>
+
+            <label for="suggestions">¿Tienes sugerencias para mejorar?</label>
+            <textarea id="suggestions" name="suggestions" rows="5"></textarea>
+
+            <button type="submit">Enviar Encuesta</button>
+        </form>
+    </div>
+</body>
+</html>

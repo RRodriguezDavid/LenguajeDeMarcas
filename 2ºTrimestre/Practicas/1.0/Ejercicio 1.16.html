@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <style> 
+            .container {
+                position: static;
+                width: auto;
+                height: auto;
+            }
+            
+            div {
+                
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                font-weight: bold;
+            }
+            
+            /* Caja 2 (Azul) - Se coloca primero */
+            #azul {
+                position: static;
+                background-color: blue;
+                float: right;
+            }
+            
+            /* Caja 1 (Roja) - Flota a la izquierda */
+            #rojo {
+                position: static;
+                background-color: red;
+            }
+            
+            /* Caja 3 (Verde) - Flota a la izquierda */
+            #verde {
+                position: static;
+                background-color: green;
+            }
+            
+
+        </style> 
+    </head> 
+    <body >
+        <div class="container">
+            <div id="rojo">Caja 1</div>
+            <div id="azul">Caja 2</div>
+            <div id="verde">Caja 3</div>
+
+        </div>
+    </body>
+</html>
+

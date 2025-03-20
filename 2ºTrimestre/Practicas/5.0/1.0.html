@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página Web Ejemplo</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    
+    header {
+        background: #4CAF50;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    nav {
+        background: #333;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .hero {
+        background: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        width: 30%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center; /* Centrar texto en las tarjetas */
+    }
+    
+    .card-image {
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho de la tarjeta */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+    
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background: #333;
+        color: white;
+    }   
+</style>
+<body>
+    <header>
+        <h1>INFOMATICA</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="inicio" class="hero">
+            <h2>Bienvenido a mi Página</h2>
+            <p>Esto es una tienda de productos específicos de informática, en la que solo encontrarás 
+                marcas de gran calidad y una selección de artículos escogidos por los mayores especialistas para que tengas una grata experiencia.</p>
+        </section>
+        <section id="servicios" class="content">
+            <div class="card">
+                <img src="monitor.png" alt="Foto de un monitor" class="card-image">
+                <h3>Monitor</h3>
+                <p>Precio: 250 €</p>
+            </div>
+            <div class="card">
+                <img src="raton.jpg" alt="Foto de un ratón" class="card-image">
+                <h3>Ratón</h3>
+                <p>Precio: 150 €</p>
+            </div>
+            <div class="card">
+                <img src="grafica.jpg" alt="Foto de una gráfica" class="card-image">
+                <h3>Gráfica</h3>
+                <p>Precio: 750 €</p>
+            </div>
+        </section>
+        <section id="contacto" class="hero">
+            <h2>Contacto</h2>
+            <p>Para más información, contáctanos a través de nuestro correo electrónico: info@infomatica.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Infomatica. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

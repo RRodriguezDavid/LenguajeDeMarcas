@@ -1,0 +1,19 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Color del texto en los párrafos */
+p {
+    color: blue;
+}
+
+/* Margen en los títulos h1 */
+h1 {
+    margin: 20px;
+}
+
+/* Borde en todos los div */
+div {
+    border: 2px solid black;
+}

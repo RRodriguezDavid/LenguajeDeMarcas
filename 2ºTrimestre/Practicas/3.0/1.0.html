@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla con Colores</title>
+  <style>
+    table {
+      width: 50%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ccc;
+    }
+    /* Color de fondo para la primera fila (encabezado) */
+    th {
+      background-color: #87fa8b; /* Verde */
+      color: white;
+    }
+    /* Color de fondo para las filas pares */
+    tr:nth-child(even) {
+      background-color: #f1dbdb; /* Gris claro */
+    }
+    /* Color de fondo para las filas impares */
+    tr:nth-child(odd) {
+      background-color: #b6b6b6; /* Blanco */
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>DNI</th>
+        <th>Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Juan</td>
+        <td>Tamariz</td>
+        <td>53555444</td>
+        <td>73</td>
+      </tr>
+      <tr>
+        <td>Pepe</td>
+        <td>Carroll</td>
+        <td>52444555</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>Miguel Ángel</td>
+        <td>Gea</td>
+        <td>51666555</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>Luis</td>
+        <td>Piedrahita</td>
+        <td>50555666</td>
+        <td>39</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

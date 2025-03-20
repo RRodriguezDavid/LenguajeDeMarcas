@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+
+<html> 
+<head> 
+  <title>Problema</title> 
+  <meta charset="UTF-8"> 
+  <link rel="StyleSheet" href="estilos.css" type="text/css"> 
+</head> 
+<STYLE>/* Estiliza el único <li> dentro de #fechainicio */
+/* Estiliza el único <li> dentro de #fechainicio */
+    #fechainicio li:only-child {
+        color: blue;
+        font-weight: bold;
+    }
+    
+    /* Estiliza el único <p> dentro de #equipo1 */
+    #equipo1 p:only-child {
+        color: red;
+        font-weight: bold;
+    }
+    
+    /* Estiliza el único <h1> dentro de cualquier contenedor */
+    div h1:only-of-type {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+</STYLE>
+<body> 
+  <h1>Fecha de inicio.</h1> 
+  <ul id="fechainicio"> 
+    <li>10/10/2015</li> 
+  </ul> 
+  <h1>Fechas finales.</h1> 
+  <ul id="fechafin"> 
+    <li>10/12/2015</li> 
+    <li>24/12/2015</li> 
+  </ul> 
+  <div id="equipo1"> 
+    <h1>Participantes</h1> 
+    <p>Pablo Martinez.</p>   
+  </div> 
+  <div id="equipo2"> 
+    <h1>Participantes</h1> 
+    <p>Ana Luz.</p>   
+    <p>Pedro Rodriguez.</p>   
+  </div> 
+</body> 
+</html> 
