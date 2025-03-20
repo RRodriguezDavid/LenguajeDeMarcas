@@ -1,0 +1,32 @@
+<!--
+Nombre: [David]
+Curso: XML Básico
+Fecha: [20/03/2025]
+Ejercicio: Empleados
+-->
+<Empleados>
+    <!-- Información del empleado de ventas -->
+    <Empleado>
+        <Nombre>Ana</Nombre>
+        <Apellido>García</Apellido>
+        <Edad>30</Edad>
+        <Departamento>Ventas</Departamento>
+        <Cargo>Ejecutivo de ventas</Cargo>
+    </Empleado>
+    <!-- Información del empleado de finanzas -->
+    <Empleado>
+        <Nombre>Luis</Nombre>
+        <Apellido>Rodríguez</Apellido>
+        <Edad>45</Edad>
+        <Departamento>Finanzas</Departamento>
+        <Cargo>Analista financiero</Cargo>
+    </Empleado>
+    <!-- Información del empleado de marketing -->
+    <Empleado>
+        <Nombre>María</Nombre>
+        <Apellido>López</Apellido>
+        <Edad>28</Edad>
+        <Departamento>Marketing</Departamento>
+        <Cargo>Especialista en redes sociales</Cargo>
+    </Empleado>
+</Empleados>

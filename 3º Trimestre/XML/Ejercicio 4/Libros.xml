@@ -1,0 +1,14 @@
+<!--
+Nombre: [David]
+Curso: XML Básico
+Fecha: [20/03/2025]
+Ejercicio: Lista de Libros
+-->
+<Libros>
+    <!-- Libro de literatura latinoamericana -->
+    <Libro titulo="Cien años de soledad" autor="Gabriel García Márquez" año="1967" />
+    <!-- Libro de ciencia ficción y política -->
+    <Libro titulo="1984" autor="George Orwell" año="1949" />
+    <!-- Obra épica de fantasía -->
+    <Libro titulo="El señor de los anillos" autor="J.R.R. Tolkien" año="1954" />
+</Libros>

@@ -1,0 +1,23 @@
+<!--
+Nombre: [David]
+Curso: XML Básico
+Fecha: [20\03\2025]
+Ejercicio: Ciudades
+-->
+<Ciudades>
+    <!-- Ciudad ubicada en Asia -->
+    <Ciudad continente="Asia">
+        <Nombre>Nueva Delhi</Nombre>
+        <País>India</País>
+    </Ciudad>
+    <!-- Ciudad ubicada en Europa -->
+    <Ciudad continente="Europa">
+        <Nombre>Lisboa</Nombre>
+        <País>Portugal</País>
+    </Ciudad>
+    <!-- Ciudad ubicada en África -->
+    <Ciudad continente="África">
+        <Nombre>El Cairo</Nombre>
+        <País>Egipto</País>
+    </Ciudad>
+</Ciudades>

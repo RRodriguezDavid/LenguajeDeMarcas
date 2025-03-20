@@ -1,0 +1,32 @@
+<!--
+Nombre: [David]
+Curso: XML Básico
+Fecha: [20/03/2025]
+Ejercicio: Hechos Históricos
+-->
+<HechosHistoricos>
+    <!-- Evento tecnológico importante -->
+    <Hecho descripcion="IBM da a conocer el PC.">
+        <Fecha>
+            <Día>12</Día>
+            <Mes>8</Mes>
+            <Año>1981</Año>
+        </Fecha>
+    </Hecho>
+    <!-- Fundación de Google -->
+    <Hecho descripcion="Se funda Google.">
+        <Fecha>
+            <Día>4</Día>
+            <Mes>9</Mes>
+            <Año>1998</Año>
+        </Fecha>
+    </Hecho>
+    <!-- Fundación de Facebook -->
+    <Hecho descripcion="Se funda Facebook.">
+        <Fecha>
+            <Día>4</Día>
+            <Mes>2</Mes>
+            <Año>2004</Año>
+        </Fecha>
+    </Hecho>
+</HechosHistoricos>
