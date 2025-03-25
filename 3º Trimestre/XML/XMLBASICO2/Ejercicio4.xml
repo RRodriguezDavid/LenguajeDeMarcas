@@ -1,0 +1,36 @@
+<!--
+Nombre: [David]
+Curso: Lenguajes de Marcas
+Fecha: [25/03/2005]
+Ejercicio: Ejercicios XML
+-->
+<!-- Ejercicio 4: Información de Alumnos -->
+<modulo>
+    <nombre>Lenguajes de Marcas</nombre>
+    <horas-semanales>4</horas-semanales>
+    <caracter>Obligatorio</caracter>
+    <periodo>
+        <inicio>15/09/2023</inicio>
+        <fin>22/06/2024</fin>
+    </periodo>
+    <alumnos>
+        <alumno>
+            <nombre>Ana Fernández Gutiérrez</nombre>
+            <dni>51623487V</dni>
+            <telefono>666544566</telefono>
+            <email>anafernandez@gmail.com</email>
+            <direccion>C/ Amatista, 14, 28905 Getafe (Madrid)</direccion>
+            <faltas-asistencia>No disponible</faltas-asistencia>
+            <nota>No disponible</nota>
+        </alumno>
+        <alumno>
+            <nombre>Carlos López Sánchez</nombre>
+            <dni>52369874B</dni>
+            <telefono>666455477</telefono>
+            <email>carloslopez@gmail.com</email>
+            <direccion>C/ Ópalo, 15, 28905 Getafe (Madrid)</direccion>
+            <faltas-asistencia>0</faltas-asistencia>
+            <nota>Apto</nota>
+        </alumno>
+    </alumnos>
+</modulo>
