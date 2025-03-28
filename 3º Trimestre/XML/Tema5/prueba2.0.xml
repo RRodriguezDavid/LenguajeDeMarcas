@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE marcadores SYSTEM "marcadores.dtd" [
+<!ELEMENT marcadores (pagina)*>
+<!ELEMENT pagina (nombre, descripcion, url)>
+]>
+<marcadores>
+<pagina>
+<nombre>bUSCADOR</nombre>
+<descripcion>Google.</descripcion>
+<url>https://www.google.com/?hl=es</url>
+</pagina>
+<pagina>
+<nombre>pATO</nombre>
+<descripcion>Patos.</descripcion>
+<url>https://duckduckgo.com/</url>
+</pagina>
+<pagina>
+<nombre>Steam</nombre>
+<descripcion>Steam</descripcion>
+<url>https://store.steampowered.com/?l=spanish/</url>
+</pagina>
+</marcadores>

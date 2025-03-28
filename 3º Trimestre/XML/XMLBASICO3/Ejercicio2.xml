@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:b="http://ejemplo.com/book">
+  <head><title>Book Review</title></head>
+  <body>
+    <b:bookreview>
+      <b:title>Introducción a XML</b:title>
+      <table>
+        <tr align="center">
+          <td>Author</td>
+          <td>Price</td>
+          <td>Pages</td>
+          <td>Date</td>
+        </tr>
+        <tr align="left">
+          <td><b:author>Simon St. Laurent</b:author></td>
+          <td><b:price>31.98</b:price></td>
+          <td><b:pages>352</b:pages></td>
+          <td><b:date>1998/01</b:date></td>
+        </tr>
+      </table>
+    </b:bookreview>
+  </body>
+</html>
